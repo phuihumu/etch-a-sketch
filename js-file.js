@@ -14,8 +14,6 @@ function createGrid(row, column) {
     }
 }
 
-createGrid(16, 16);
-
 container.addEventListener('mouseover', changeColor);
 
 function changeColor(event) {
@@ -43,6 +41,8 @@ btn.addEventListener('click', () => {
         }
     }
     
+    container.textContent = '';
+    createGrid(number, number);
     
 });
 
