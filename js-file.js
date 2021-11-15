@@ -16,15 +16,10 @@ function createGrid(row, column) {
 
 createGrid(16, 16);
 
-//const box = document.querySelectorAll('.squareDiv');
-container.addEventListener('mouseenter', changeColor);
-/*
-container.getElementsByClassName('square').addEventListener("mouseover", function() {
-    container.getElementsByClassName('square').style.color = "grey";
-})*/
+container.addEventListener('mouseover', changeColor);
 
-function changeColor(e) {
-    let square = e.target;
-    square.style.backgroundColor = "grey";
+function changeColor(event) {
+    let cell = event.target;
+    return cell.style.backgroundColor = "grey";
 }
 
