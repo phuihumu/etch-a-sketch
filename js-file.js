@@ -18,7 +18,11 @@ container.addEventListener('mouseover', changeColor);
 
 function changeColor(event) {
     let cell = event.target;
-    return cell.style.backgroundColor = "grey";
+    if (cell.classList.contains('square'))
+    {
+        cell.style.backgroundColor = "grey";
+    }
+
 }
 
 const btn = document.querySelector('#btn');
@@ -41,8 +45,8 @@ btn.addEventListener('click', () => {
         }
     }
     
-    container.textContent = '';
-    createGrid(number, number);
+    container.textContent = ''; //Clear previous grid
+    createGrid(number, number); //Create new grid with user input
     
 });
 
