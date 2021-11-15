@@ -5,7 +5,11 @@
 
 .title {
     text-align: center;
-    padding-left: 20px;
+}
+
+.button-container {
+    text-align: center;
+    padding: 10px;
 }
 
 .container {
@@ -16,16 +20,9 @@
     grid-gap: 1px;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    /*justify-content: space-evenly;
-    margin:auto;*/
 }
 
 .square {
-    /*display:inline-block;*/
-    /*width:25px;
-    height:25px;
-    border: solid #000;
-    border-width:  0 1px;*/
     padding: 1px;
     border: 1px solid #000;
 }

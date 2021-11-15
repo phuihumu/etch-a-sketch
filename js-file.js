@@ -23,3 +23,26 @@ function changeColor(event) {
     return cell.style.backgroundColor = "grey";
 }
 
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', () => {
+    let number = prompt ("Enter Number of Squares per Side: ");
+    
+    while (true)
+    {
+        if (number > 100)
+        {
+            number = prompt ("Try again, Max is 100");
+        }
+        else if (number < 0)
+        {
+            number = prompt ("Negative number. Try again.")
+        }
+        else
+        {
+            break;
+        }
+    }
+    
+    
+});
+
