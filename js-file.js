@@ -20,7 +20,7 @@ function changeColor(event) {
     let cell = event.target;
     if (cell.classList.contains('square'))
     {
-        cell.style.backgroundColor = "grey";
+        cell.style.backgroundColor = "black";
     }
 
 }
